@@ -9,7 +9,7 @@ printf "[build]\nrustc-wrapper = '%s/.cargo/bin/sccache'" $HOME  >> $HOME/.cargo
 yay -S cmake
 
 # installs some useful packages
-cargo install coreutils lsd du-dust bat ripgrep porsmo speedtest-rs wiki-tui zellij gitoxide helix spaceship
+cargo install coreutils lsd du-dust bat ripgrep porsmo speedtest-rs wiki-tui zellij gitoxide helix spaceship fsi
 echo "Installed: coreutils, lsd, du-dust, bat, ripgrep, irust, porsmo, speedtest-rs, wiki-tui, zellij, gitoxide, helix, spaceship"
 # Creating configs
 mkdir ~/.config/zellij
@@ -17,14 +17,18 @@ mkdir -p ~/.config && touch ~/.config/starship.toml
 zellij setup --dump-config > ~/.config/zellij/config.kdl
 
 # create aliases
-echo 'eval "$(starship init bash)"' >> $CONSOLE_CONFIG
 echo 'alias ls="lsd"' >> $CONSOLE_CONFIG
 echo 'alias cat="bat"' >> $CONSOLE_CONFIG
 echo 'alias grep="rg"' >> $CONSOLE_CONFIG
-
+echo "fsi" >> $CONSOLE_CONFIG
 # notify of alias creation
 echo "created aliases for ls -> exa; cat -> bat; grep -> ripgrep;"
-echo "set starship as terminal prompt"
 
 #reload config
 source ~/.bashrc
+
+# customization
+cargo install spaceship
+echo 'eval "$(starship init bash)"' >> $CONSOLE_CONFIG
+echo "set spaceship as terminal prompt"
+yay -S neofetch
