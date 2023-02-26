@@ -16,3 +16,4 @@ echo 'eval "$(starship init bash)"' >> $CONSOLE_CONFIG
 echo "set spaceship as terminal prompt"
 
  ~/.bashrc
+
