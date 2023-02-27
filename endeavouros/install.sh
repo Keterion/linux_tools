@@ -2,11 +2,10 @@
 yay -S cmake
 
 # installs some useful packages
-cargo install coreutils lsd du-dust bat ripgrep porsmo speedtest-rs wiki-tui fsi zoxide
+cargo install coreutils lsd bat ripgrep porsmo wiki-tui fsi zoxide
 yay -S helix
-echo "Installed: coreutils, lsd, du-dust, bat, ripgrep, irust, porsmo, speedtest-rs, wiki-tui, zoxide"
+echo "Installed: coreutils, lsd, bat, ripgrep, porsmo, wiki-tui, fsi, zoxide"
 
-#reload config
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 echo "installed kitty"
 
