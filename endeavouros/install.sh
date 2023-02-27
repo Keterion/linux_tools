@@ -6,5 +6,7 @@ cargo install coreutils lsd du-dust bat ripgrep porsmo speedtest-rs wiki-tui zel
 echo "Installed: coreutils, lsd, du-dust, bat, ripgrep, irust, porsmo, speedtest-rs, wiki-tui, zellij, gitoxide, helix, spaceship"
 
 #reload config
-cargo install spaceship
-echo "installed spaceship"
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+echo "installed kitty"
+
+yay -S zsh
