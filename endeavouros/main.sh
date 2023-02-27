@@ -1,8 +1,10 @@
-bash rust.sh
+echo "Hello World!"
 
-bash sccache.sh
-
-bash install.sh
-
-bash config.sh
-
+echo "Steps:"
+echo "1. bash rust.sh"
+echo "walk through the rust installer"
+echo "2. source '$HOME/.cargo/env'"
+echo "3. bash sccache.sh"
+echo "4. bash install.sh"
+echo "5. bash config.sh"
+echo "Done after that"
