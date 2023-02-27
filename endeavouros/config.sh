@@ -3,6 +3,6 @@ sudo ln -s ~/.local/kitty.app/bin/kitten /bin/
 
 cp -r ./configs/kitty ~/.config/ 
 
-source $CONSOLE_CONFIG
+source ~/.zshrc
 
 
