@@ -10,4 +10,8 @@ sudo pacman -S helix
 sudo pacman -S kitty
 echo "installed kitty"
 
+sudo pacman -S unzip
+
 sudo pacman -S zsh
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
